@@ -1,0 +1,7 @@
+# Ignore everything inside .obsidian
+.obsidian/*
+
+# Allow only the MindMap OS plugin to sync
+!.obsidian/plugins/
+!.obsidian/plugins/mindmap-os/
+!.obsidian/plugins/mindmap-os/**
