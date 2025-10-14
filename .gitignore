@@ -1,9 +1,21 @@
-# Ignore everything inside .obsidian
-.obsidian/*
+# Ignore everything in the vault
+/*
 
-# Allow only the MindMap OS plugin to sync
+# Keep this file
+!.gitignore
+
+# Keep Obsidian plugin folder
+!.obsidian/
 !.obsidian/plugins/
-!.obsidian/plugins/mindmap-os/
-!.obsidian/plugins/mindmap-os/**
-!99 Templates/
-!99 Templates/**
+!.obsidian/plugins/mindmapos/
+!.obsidian/plugins/mindmapos/**
+
+# But ignore build junk inside the plugin
+.obsidian/plugins/mindmapos/node_modules/
+.obsidian/plugins/mindmapos/.DS_Store
+.obsidian/plugins/mindmapos/*.map
+
+# Keep the compiled build
+!.obsidian/plugins/mindmapos/main.js
+!.obsidian/plugins/mindmapos/manifest.json
+!.obsidian/plugins/mindmapos/styles.css
